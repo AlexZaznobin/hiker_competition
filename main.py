@@ -130,7 +130,11 @@ async def process_teams (message: types.Message, state: FSMContext) :
     async with state.proxy() as data :
         data['min_task'] = message.text
 
-        schedule = team_selector(data['teams'], data['tasks'] , data['min_task'])
+        for i in range(10):
+            schedule = team_selector(data['teams'], data['tasks'] , data['min_task'])
+            if type(schedule)!=str:
+                break
+
         if type(schedule)!=str:
             # Convert numpy array to Pandas DataFrame
             df = pd.DataFrame(schedule)
