@@ -1,12 +1,13 @@
-Competition Plan Bot
-Introduction
+# Competition Plan Bot
+## Introduction
 This bot helps users to generate a competition plan. It provides a detailed schedule for X teams with Y available tasks and a specific number of Z tasks that each team should go through. The bot can generate a schedule in the form of an Excel table and supports multiple languages, such as English and Russian.
 
-Table of Contents
+## Table of Contents
 Features
 Setup & Installation
 Usage
 Development
+
 Features <a name="features"></a>
 Multilingual Support: Supports both English and Russian.
 Dynamic Scheduling: Generates schedule based on the provided input.
