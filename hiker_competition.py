@@ -239,7 +239,7 @@ async def process_callback (callback_query: types.CallbackQuery) :
     await bot.answer_callback_query(callback_query.id)
     await cmd_start(callback_query.message)
 
-
-if __name__ == '__main__':
-    executor.start_polling(dp, loop=loop, skip_updates=True)
-
+@app.get("/")
+def read_root():
+    from aiogram import executor
+    return executor.start_polling(dp, skip_updates=True)
