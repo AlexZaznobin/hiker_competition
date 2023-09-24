@@ -29,7 +29,7 @@ Install all required libraries:
 
 bash
 Copy code
-pip install aiogram pandas numpy fastapi
+pip install -r requirements.txt
 Configuration
 
 Update the config.json with necessary details:
@@ -48,7 +48,7 @@ Execute the following command:
 
 bash
 Copy code
-python your_script_name.py
+python hiker_competition.py
 
 
 ## Usage

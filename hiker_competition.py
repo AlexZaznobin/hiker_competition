@@ -31,11 +31,13 @@ logging.basicConfig(level=logging.INFO,
                     ])
 
 logger = logging.getLogger(__name__)
+config={}
+# with open('config.json', 'r') as confile:
+#     config = json.load(confile)
 
-with open('config.json', 'r') as confile:
-    config = json.load(confile)
+config['telegram'] = os.environ.get("TELEGRAM")
+config['link'] = "@alex_zaznobin"
 
-# config['telegram'] = os.environ.get("TELEGRAM")
 # Initialize bot and dispatcher
 bot = Bot(token=config['telegram'])
 dp = Dispatcher(bot)
