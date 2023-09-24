@@ -8,13 +8,14 @@ Setup & Installation
 Usage
 Development
 
-Features <a name="features"></a>
+## Features
 Multilingual Support: Supports both English and Russian.
 Dynamic Scheduling: Generates schedule based on the provided input.
 Error Handling: Can handle incorrect inputs gracefully.
 Logging: Keeps detailed logs of user interactions.
 FastAPI Integration: Has a foundation for potential future web endpoints.
-Setup & Installation <a name="setup--installation"></a>
+
+## Setup & Installation 
 Clone the Repository
 
 Get a local copy of the repository using:
@@ -48,10 +49,13 @@ Execute the following command:
 bash
 Copy code
 python your_script_name.py
-Usage <a name="usage"></a>
+
+
+## Usage
 Initiate the bot with the /start command.
 Select the desired language.
 Follow the prompts and input the required details.
 The bot will generate and provide the schedule in an Excel format.
-Development <a name="development"></a>
+
+## Development 
 The bot is crafted using the aiogram library for Telegram bot interactions, integrated with FastAPI for potential web endpoints. The bot utilizes pandas for data operations and Excel sheet creation. It maintains comprehensive logs of every user interaction, including user details and messages.
