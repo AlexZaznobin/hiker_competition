@@ -243,3 +243,6 @@ async def process_callback (callback_query: types.CallbackQuery) :
 def read_root():
     from aiogram import executor
     return executor.start_polling(dp, skip_updates=True)
+if __name__ == '__main__':
+    from aiogram import executor
+    executor.start_polling(dp, skip_updates=True)
